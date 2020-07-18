@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './header.js'
 import Features from './features.js';
 import Cart from './cart.js';
 
@@ -50,7 +49,9 @@ class App extends Component {
     
     return (
       <div className="App">
-        <Header />        
+        <header>
+                <h1>ELF Computing | Laptops</h1>
+            </header>     
         <main>
           <Features USCurrencyFormat={number => this.USCurrencyFormat(number)} selectedState={this.state.selected} features={this.props.features} updateFeature={(feature, newValue) => this.updateFeature(feature, newValue)}/>          
           <Cart selectedState={this.state.selected} USCurrencyFormat={number => this.USCurrencyFormat(number)}/>          
