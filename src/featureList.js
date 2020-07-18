@@ -11,7 +11,13 @@ class FeatureList extends React.Component {
                     <legend className="feature__name">
                     <h3>{feature}</h3>
                     </legend>
-                    <Option featureName={feature} feature={this.props.features[feature]} updateFeature={this.props.updateFeature} selectedState={this.props.selectedState} features={this.props.features} USCurrencyFormat={this.props.USCurrencyFormat}/>
+                    <Option featureName={feature} 
+                    feature={this.props.features[feature]} 
+                    updateFeature={this.props.updateFeature} 
+                    selectedState={this.props.selectedState} 
+                    features={this.props.features} 
+                    USCurrencyFormat={this.props.USCurrencyFormat}
+                    />
                 </fieldset>
             );
             }) 

@@ -7,9 +7,15 @@ class Cart extends React.Component {
         return  (
             <section className="main__summary">
                 <h2>Your cart</h2>
-                <CartList selectedState={this.props.selectedState} USCurrencyFormat={this.props.USCurrencyFormat}/>
+                <CartList 
+                selectedState={this.props.selectedState} 
+                USCurrencyFormat={this.props.USCurrencyFormat}
+                />
                 <hr />
-                <Total USCurrencyFormat={this.props.USCurrencyFormat} selectedState={this.props.selectedState}/>
+                <Total 
+                USCurrencyFormat={this.props.USCurrencyFormat} 
+                selectedState={this.props.selectedState}
+                />
             </section> 
         )
 
