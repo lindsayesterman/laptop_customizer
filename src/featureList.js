@@ -15,7 +15,6 @@ class FeatureList extends React.Component {
                     feature={this.props.features[feature]} 
                     updateFeature={this.props.updateFeature} 
                     selectedState={this.props.selectedState} 
-                    features={this.props.features} 
                     USCurrencyFormat={this.props.USCurrencyFormat}
                     />
                 </fieldset>
